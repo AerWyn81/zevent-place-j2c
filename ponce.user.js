@@ -134,7 +134,7 @@ const showUpdate = (version) => {
 
     const update = document.createElement("div");
     update.style.position = "fixed";
-    update.style.background = "white";
+    update.style.background = "blue";
     update.style.right = "10px";
     update.style.padding = "0 10px";
     update.style.textAlign = "center";
@@ -210,7 +210,7 @@ const showUpdate = (version) => {
                 const defaultStyle = (element) => {
                     Object.assign(element.style, {
                         border: "1px solid rgba(0,0,0,0.3)",
-                        backgroundColor: "white",
+                        backgroundColor: "blue",
                         fontSize: "0.9em",
                         color: "black",
                         fontWeight: "bold"
@@ -358,7 +358,7 @@ const showUpdate = (version) => {
                     langSpan.style.margin = "0 5px";
                     langSpan.style.border = "1px solid rgba(0,0,0,0.3)";
                     langSpan.style.borderRadius = "5px";
-                    langSpan.style.background = "white";
+                    langSpan.style.background = "blue";
                     langSpan.style.color = "black";
                     langSpan.style.textTransform = "uppercase";
                     langSpan.id = lang
