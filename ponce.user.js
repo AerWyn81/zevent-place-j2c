@@ -134,7 +134,7 @@ const showUpdate = (version) => {
 
     const update = document.createElement("div");
     update.style.position = "fixed";
-    update.style.background = "white";
+    update.style.background = "transparent";
     update.style.right = "10px";
     update.style.padding = "0 10px";
     update.style.textAlign = "center";
