@@ -1,15 +1,15 @@
 // ==UserScript==
-// @name         ZEvent Place - Armée de Kameto
-// @namespace    https://github.com/YoannLD/zevent-place-kcorp
+// @name         ZEvent Place - LFCF
+// @namespace    https://github.com/haykira/zevent-place-ponce
 // @version      0.13
-// @description  On va récuperer ce qui nous est dû de droit.
-// @author       Adcoss95 & CorentinGC & Nostral
+// @description  Nous sommes de très jolies fleures.
+// @author       Adcoss95 & CorentinGC & Nostral (Edité par Haykira)
 // @match        https://place.zevent.fr/*
-// @icon         https://raw.githubusercontent.com/YoannLD/zevent-place-kcorp/main/icon.jpg
+// @icon         https://raw.githubusercontent.com/haykira/zevent-place-ponce/main/icon.png
 // @grant        none
-// @downloadURL  https://raw.githubusercontent.com/YoannLD/zevent-place-kcorp/main/kcorp.user.js
-// @updateURL    https://raw.githubusercontent.com/YoannLD/zevent-place-kcorp/main/kcorp.user.js
-// @supportURL   https://github.com/YoannLD/zevent-place-kcorp/issues
+// @downloadURL  https://raw.githubusercontent.com/haykira/zevent-place-ponce/main/ponce.user.js
+// @updateURL    https://raw.githubusercontent.com/haykira/zevent-place-ponce/main/ponce.user.js
+// @supportURL   https://github.com/haykira/zevent-place-ponce/issues
 
 // ==/UserScript==
 
@@ -18,8 +18,8 @@ const DEBUG = false;
 
 const UPDATE_URL = GM_info.script.updateURL;
 const DISCORD_URL = "https://discord.gg/kameto";
-const OVERLAY_URL = "https://raw.githubusercontent.com/YoannLD/zevent-place-kcorp/main/overlay.png";
-const VERSION_URL = "https://raw.githubusercontent.com/YoannLD/zevent-place-kcorp/main/version.json";
+const OVERLAY_URL = "https://raw.githubusercontent.com/haykira/zevent-place-ponce/main/overlay.png";
+const VERSION_URL = "https://raw.githubusercontent.com/haykira/zevent-place-ponce/main/version.json";
 const PLACE_URL = "https://place.zevent.fr/";
 
 const allowedLangs = ['fr', 'en'];
@@ -64,7 +64,7 @@ const LANGS = {
         btn_toggle_cache: "{{0}} le cache de l'overlay",
         overlay_opacity: "Opacité de l'overlay",
         join_discord: "Rejoindre le discord de Kamet0",
-        by_nostral: "KCorp's overlay v{{0}} par Nostral"
+        by_nostral: "ponce's overlay v{{0}} par Nostral"
     },
     en: {
         update_available: "`Update available v{{0}} > v{{1}} ! Click here to install`",
@@ -80,7 +80,7 @@ const LANGS = {
         btn_toggle_cache: "{{0}} overlay's cache",
         overlay_opacity: "Overlay's opacity",
         join_discord: "Join Kamet0's discord !",
-        by_nostral: "KCorp's overlay v{{0}} by Nostral"
+        by_nostral: "ponce's overlay v{{0}} by Nostral"
     },
 };
 const f = (key, ...vars) => {
@@ -130,7 +130,7 @@ const checkVersion = () => {
 
 }
 const showUpdate = (version) => {
-    if(document.getElementById("kcorp-update")) return;
+    if(document.getElementById("ponce-update")) return;
 
     const update = document.createElement("div");
     update.style.position = "fixed";
@@ -147,7 +147,7 @@ const showUpdate = (version) => {
     update.style.borderRadius = "10px";
     update.style.fontSize = "1.3em";
     update.style.cursor = "pointer";
-    update.id = "kcorp-update";
+    update.id = "ponce-update";
 
     let message = document.createTextNode(f("update_available", GM_info.script.version, version));
     update.appendChild(message);
@@ -160,7 +160,7 @@ const showUpdate = (version) => {
 }
 
 (async function() {
-    log("Loading KCorp module");
+    log("Loading ponce module");
 
         const overlayURL = () => OVERLAY_URL+(opts.ENABLE_IMGNOCACHE ? "?t="+new Date().getTime() : "");
         log({opts});
@@ -245,7 +245,7 @@ const showUpdate = (version) => {
                 control.style.left = "90px";
                 control.style.top = "16px";
                 control.style.maxWidth = "150px";
-                control.id = "kcorp-controls";
+                control.id = "ponce-controls";
 
                 // Update Btn
                 const updateBtn = document.createElement("button");
@@ -409,5 +409,5 @@ const showUpdate = (version) => {
             showOverlay();
             showUi();
         }, false);
-    log("KCorp module loaded");
+    log("ponce module loaded");
 })();
