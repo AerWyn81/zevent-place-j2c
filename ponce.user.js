@@ -63,8 +63,8 @@ const LANGS = {
         btn_autorefresh_overlay: "{{0}} l'auto-refresh de l'overlay ({{1}}s)",
         btn_toggle_cache: "{{0}} le cache de l'overlay",
         overlay_opacity: "Opacité de l'overlay",
-        join_discord: "Rejoindre le discord de Kamet0",
-        by_nostral: "ponce's overlay v{{0}} par Nostral"
+        join_discord: "Rejoindre le discord de Ponce",
+        by_nostral: "ponce's overlay v{{0}} par Haykira"
     },
     en: {
         update_available: "`Update available v{{0}} > v{{1}} ! Click here to install`",
@@ -79,8 +79,8 @@ const LANGS = {
         btn_autorefresh_overlay: "{{0}} overlay's auto-refresh ({{1}}s)",
         btn_toggle_cache: "{{0}} overlay's cache",
         overlay_opacity: "Overlay's opacity",
-        join_discord: "Join Kamet0's discord !",
-        by_nostral: "ponce's overlay v{{0}} by Nostral"
+        join_discord: "Join Ponce's discord !",
+        by_nostral: "ponce's overlay v{{0}} by Haykira"
     },
 };
 const f = (key, ...vars) => {
