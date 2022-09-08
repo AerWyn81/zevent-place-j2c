@@ -2,7 +2,7 @@
 // @name         ZEvent Place - Les pixels du FCF
 // @namespace    https://github.com/haykira/zevent-place-ponce
 // @version      0.13.FLEUR
-// @description  Nous sommes de très jolies fleures.
+// @description  Nous sommes de très jolies fleurs.
 // @author       Adcoss95 & CorentinGC & Nostral (Edité par Haykira)
 // @match        https://place.zevent.fr/*
 // @icon         https://raw.githubusercontent.com/haykira/zevent-place-ponce/main/icon.png
