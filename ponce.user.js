@@ -1,5 +1,5 @@
 // ==UserScript==
-// @name         ZEvent Place - LFCF
+// @name         ZEvent Place - Les pixels du FCF
 // @namespace    https://github.com/haykira/zevent-place-ponce
 // @version      0.13.FLEUR
 // @description  Nous sommes de très jolies fleures.
