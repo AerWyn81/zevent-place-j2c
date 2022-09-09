@@ -18,7 +18,7 @@ const DEBUG = false;
 
 const UPDATE_URL = GM_info.script.updateURL;
 const DISCORD_URL = "https://discord.gg/ponce";
-const OVERLAY_URL = "https://raw.githubusercontent.com/haykira/zevent-place-ponce/main/overlay.png";
+const OVERLAY_URL = "https://raw.githubusercontent.com/haykira/zevent-place-ponce/main/overlay_ponce_bg.png";
 const VERSION_URL = "https://raw.githubusercontent.com/haykira/zevent-place-ponce/main/version.json";
 const PLACE_URL = "https://place.zevent.fr/";
 
